@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+        html, body{
+            height: 100%;
+        }
+
+        div{
+            border:0px solid red ;
+        }
+
+        .m-container{
+            background-image: url("bg2.jpg");
+            background-repeat: repeat-x;
+            background-size: 120% 120%;
+            width: 100%;
+            height: 100%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .x-container{
+            background-image: url("bg1.jpg");
+            background-repeat: repeat-x;
+            box-shadow: 0px 1px 5px 1px grey;
+            background-size: 100% 100%;
+            width: 85%;
+            height: 85%;
+            padding: 30px;
+            margin: auto;
+            color: #526490;
+            font-family: "Lato";
+            font-weight: bold;
+
+        }
+
+        .header-container{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3%;
+        }
+
+        .main-container{
+            display: flex;
+            align-items: center;
+            height: 80%;
+            
+        }
+
+        .footer-container{
+            display: flex;
+            justify-content: flex-start;
+            margin: 5px;
+
+        }
+
+        .header-right{
+            display: flex;
+            justify-content: space-between;
+            width: 50%
+        }
+
+        .left-col{
+            padding-right: 15%;
+        }
+
+        .p-title{
+            font-weight: 900;
+        }
+        .p-text{
+            font-weight: 200;
+        }
+
+        .p-bouton-element:hover {
+            background-color:#526490;
+            color: white;
+            cursor: pointer;
+        }
+        .clicable:hover{
+            cursor: pointer;
+        }
+        .p-bouton{
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .p-bouton-element{
+            border-radius: 10px;
+            background-color:#b3eaff;
+            margin: 10px 20px 10px 0;
+            padding: 5px 10px;
+       
+        }
+        .header-right-element:hover {
+            color: #b3eaff;
+            cursor: pointer;
+        }
+        .header-left:hover {
+            color: white;
+            cursor: pointer;
+        }
+
+        .p-img-element{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-element{
+            border-radius: 50%;
+            background-color: #526490;
+            width: 25px;
+            height: 25px;
+            margin: 2px;
+            text-align: center;
+            color: white;
+        }
+        i .fa{
+            position:relative;
+            color: white;
+            transition:.5s;
+            text-align: center;
+        }
+        .footer-element:hover {
+            transform:rotateY(360deg);
+             background-color:white;
+            color: #526490;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+<div class="m-container">
+<div class="x-container">
+    <div class="header-container" clicable>
+        <div class="header-left" clicable>
+            Home
+        </div>
+        <div class="header-right" clicable>
+            <div class="header-right-element" clicable>
+                Blog
+            </div>
+            <div class="header-right-element" clicable>
+                About us
+            </div>
+            <div class="header-right-element" clicable>
+                Team
+            </div>
+            <div class="header-right-element" clicable>
+                Contact us
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="main-container row">
+        <div class="col-md-6 left-col">
+            <div class="p-title">
+                <h1>Teamwork is key</h1>
+            </div>
+            <div class="p-text">
+                Lorem ipsum dolor sit amet, consectetur adipis
+                  cing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu. 
+            </div>
+            <div class="p-bouton">
+                <div class="p-bouton-element" clicable>
+                    Learn More
+                </div> 
+                <div class="p-bouton-element" clicable>
+                    Get started
+                </div> 
+            </div>
+        </div>
+        <div class="col-md-6 right-col">
+            <div class="p-img-element">
+                
+            </div> 
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="footer-element" clicable>
+            <i class="fa fa-linkedin"  clicable aria-hidden="true"></i>
+
+        </div>
+        <div class="footer-element" clicable>
+        <i class="fa fa-facebook" clicable aria-hidden="true"></i>
+        </div>
+        <div class="footer-element" clicable>
+            <i class="fa fa-twitter" clicable aria-hidden="true"></i>
+        </div> 
+        <div class="footer-element" clicable>
+           <i class="fa fa-pinterest-p" clicable aria-hidden="true"></i>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
